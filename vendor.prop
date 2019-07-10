@@ -199,6 +199,7 @@ vendor.iop.enable_uxe=0
 
 # Media
 vendor.media.vpp.enable=true
+debug.stagefright.c2inputsurface=-1
 
 # NFC
 ro.camera.notify_nfc=1
