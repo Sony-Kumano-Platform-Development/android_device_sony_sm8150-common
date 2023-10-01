@@ -152,6 +152,27 @@ vendor/lib64/libsoc_helper.so
 vendor/lib/libsoc_helper.so
 
 # Cacaoserver
+system/bin/cacaoserver
+system/etc/init/cacaoserver.rc
+system/etc/permissions/com.sonymobile.imageprocessor.xml
+system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar
+system/lib/libcacao_client.so
+system/lib/libcacao_pal.so
+system/lib/libcacao_process_ctrl_gateway.so
+system/lib/libcacao_service.so
+system/lib/libimageprocessorjni.so
+system/lib/vendor.somc.hardware.camera.cacao@1.0.so
+system/lib/vendor.somc.hardware.camera.cacao@2.0.so
+system/lib/vendor.somc.hardware.camera.cacao@3.0.so
+system/lib/vendor.somc.hardware.camera.cacao@3.1.so
+system/lib/vendor.somc.hardware.camera.cacao@3.2-impl.so
+system/lib/vendor.somc.hardware.camera.cacao@3.2.so
+system/lib/vendor.somc.hardware.camera.device@1.0.so
+system/lib/vendor.somc.hardware.camera.provider@1.0.so
+system/lib64/libcacao_client.so
+system/lib64/libcacao_pal.so
+system/lib64/libimageprocessorjni.so
+product/etc/permissions/com.sonymobile.camera.addon.xml
 vendor/lib/libcacao_common.so
 vendor/lib/vendor.somc.hardware.camera.cacao@1.0.so
 vendor/lib/vendor.somc.hardware.camera.cacao@2.0.so
