@@ -69,6 +69,9 @@ function blob_fixup() {
     system_ext/lib64/lib-imsvideocodec.so )
         "${PATCHELF}" --add-needed "libandroid.so" --add-needed "lib-imsvtshim.so" "${2}"
         ;;
+    system/lib64/libcacao_client.so )
+        "${PATCHELF}" --add-needed "libandroid.so" --add-needed "lib-camshim.so" "${2}"
+        ;;
     esac
 }
 
