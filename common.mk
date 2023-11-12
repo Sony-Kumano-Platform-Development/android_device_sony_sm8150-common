@@ -359,8 +359,12 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libmm-omxcore \
     libc2dcolorconvert \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor
+    libcodec2_vndk.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_foundation \
+    libstagefright_softomx
 
 # Light
 PRODUCT_PACKAGES += \
