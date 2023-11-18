@@ -558,10 +558,12 @@ vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 # Display
 system_ext/lib64/libsdm-disp-apis.qti.so
 system_ext/lib64/vendor.display.color@1.0.so
-vendor/bin/hw/vendor.semc.hardware.display@2.2-service|0157320a84fe216313b134488c43b29c8f841853
-vendor/etc/init/vendor.semc.hardware.display@2.2-service.rc|a26a5bfd1e59abcd79f434e4a94e227482b489cc
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
+
+# Display (Sony) - from XQ-BC72_Customized HK_61.2.A.0.447
+vendor/bin/hw/vendor.semc.hardware.display@2.4-service|30bb649c8b5f46e61c63546d4688c7d469692d4e
+vendor/etc/init/vendor.semc.hardware.display@2.4-service.rc|35a9f4eeb497c29314ac48038381ab62ef1ce40a
 
 # DPM
 framework/tcmclient.jar
