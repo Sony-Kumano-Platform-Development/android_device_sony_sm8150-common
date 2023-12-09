@@ -237,7 +237,6 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libtinyxml \
     libvulkan \
     gralloc.qcom \
     hwcomposer.qcom \
