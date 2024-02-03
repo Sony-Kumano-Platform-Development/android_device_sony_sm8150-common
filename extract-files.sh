@@ -71,6 +71,10 @@ function blob_fixup() {
         ;;
     system/lib64/libcacao_client.so )
         "${PATCHELF}" --add-needed "libandroid.so" --add-needed "lib-camshim.so" "${2}"
+        "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+        ;;
+    system/lib64/libimageprocessorjni.so )
+        "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
         ;;
     esac
 }
