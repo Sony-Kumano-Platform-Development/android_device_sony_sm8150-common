@@ -142,6 +142,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.msmnile \
+    audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
     sound_trigger.primary.msmnile
