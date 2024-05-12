@@ -237,7 +237,6 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libvulkan \
     gralloc.qcom \
     hwcomposer.qcom \
     vendor.qti.hardware.display.allocator-service \
