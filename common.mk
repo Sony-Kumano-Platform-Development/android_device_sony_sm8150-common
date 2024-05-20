@@ -21,6 +21,9 @@ PRODUCT_COMPRESSED_APEX := false
 # Include common vendor stuff
 $(call inherit-product, vendor/sony/sm8150-common/sm8150-common-vendor.mk)
 
+# Include Xperia extra stuff
+$(call inherit-product, device/sony/extra/extra.mk)
+
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
