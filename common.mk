@@ -21,6 +21,9 @@ PRODUCT_COMPRESSED_APEX := false
 # Include common vendor stuff
 $(call inherit-product, vendor/sony/sm8150-common/sm8150-common-vendor.mk)
 
+# Include Xperia extra stuff
+$(call inherit-product, device/sony/extra/extra.mk)
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
