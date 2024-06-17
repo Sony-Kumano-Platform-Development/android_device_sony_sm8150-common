@@ -24,6 +24,9 @@ $(call inherit-product, vendor/sony/sm8150-common/sm8150-common-vendor.mk)
 # Include Xperia extra stuff
 $(call inherit-product, device/sony/extra/extra.mk)
 
+# Include LineageOS sign stuff
+-include vendor/lineage-priv/keys/keys.mk
+
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
