@@ -206,13 +206,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
@@ -222,19 +215,6 @@ $(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
-
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0.vendor \
-    android.hardware.camera.device@3.2.vendor \
-    android.hardware.camera.provider@2.6.vendor \
-    libcamera_metadata.vendor \
-    libexif.vendor \
-    libyuv.vendor
-
-# Charger
-PRODUCT_PACKAGES += \
-    vendor.semc.hardware.charger@1.0.vendor
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -266,14 +246,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
     gralloc.qcom \
     hwcomposer.qcom \
     vendor.qti.hardware.display.allocator-service \
     android.hardware.graphics.composer@2.4-service \
-    vendor.qti.hardware.memtrack-service \
-    vendor.semc.hardware.display@2.2.vendor
+    vendor.qti.hardware.memtrack-service
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -284,17 +261,12 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
 # Input
@@ -318,7 +290,6 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
-    libavservices_minijail_vendor \
     libmm-omxcore \
     libc2dcolorconvert
 
@@ -339,9 +310,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
-    android.hardware.secure_element@1.1.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    android.hardware.nfc@1.2.vendor \
     Tag
 
 # Partitions
@@ -369,8 +337,6 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
 
@@ -382,12 +348,6 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio-service.compat \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
-    librmnetctl \
     extphonelib \
     extphonelib.xml
 
@@ -403,9 +363,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    android.hardware.light-V1-ndk_platform.vendor \
-    android.hardware.light@2.0.vendor \
-    android.hidl.base@1.0.vendor
+    android.hardware.light@2.0.vendor
 
 # Sony device library
 PRODUCT_PACKAGES += \
@@ -445,10 +403,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
-# Vendor libstdc++
-PRODUCT_PACKAGES += \
-    libstdc++_vendor
-
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
@@ -471,11 +425,6 @@ PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink \
 	firmware_bdwlan.bin_symlink
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    android.media.audio.common.types-V2-cpp \
-    libpng.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
