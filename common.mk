@@ -345,6 +345,12 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Partitions
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # OMX
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
