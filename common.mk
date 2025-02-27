@@ -259,6 +259,9 @@ PRODUCT_PACKAGES += \
     vendor.egistec.hardware.fingerprint@4.0.vendor \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
