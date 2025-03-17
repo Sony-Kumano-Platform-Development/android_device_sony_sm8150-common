@@ -10,7 +10,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -106,10 +105,6 @@ blob_fixups: blob_fixups_user_type = {
 lib_fixups: lib_fixups_user_type = {
         **lib_fixups,
         libs_add_vendor_suffix: lib_fixup_vendor_suffix,
-        (
-            'libc2dcolorconvert',
-            'libril',
-        ): lib_fixup_remove,
 }
 
 module = ExtractUtilsModule(
