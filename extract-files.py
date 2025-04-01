@@ -100,6 +100,8 @@ blob_fixups: blob_fixups_user_type = {
             .add_needed('libinput_shim.so'),
         'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
             .add_needed('libgui_shim.so'),
+        'system_ext/bin/wfdservice': blob_fixup()
+            .add_needed('libwfdservice_shim.so'),
 }  # fmt: skip
 
 lib_fixups: lib_fixups_user_type = {
