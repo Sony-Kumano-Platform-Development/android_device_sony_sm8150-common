@@ -312,6 +312,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery_ext/smart_charging_interruption)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
     libavservices_minijail_vendor \
