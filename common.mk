@@ -127,10 +127,6 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     otapreopt_script
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService-Soong
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
