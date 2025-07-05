@@ -103,6 +103,11 @@ blob_fixups: blob_fixups_user_type = {
             .add_needed('libgui_shim.so'),
         'system_ext/bin/wfdservice': blob_fixup()
             .add_needed('libwfdservice_shim.so'),
+        (
+                'vendor/lib/libsomc_camerahal.so',
+                'vendor/lib/libsomc_chokoballcmn.so',
+        ): blob_fixup()
+            .replace_needed('libui.so', 'libui-v34.so'),
 }  # fmt: skip
 
 lib_fixups: lib_fixups_user_type = {
