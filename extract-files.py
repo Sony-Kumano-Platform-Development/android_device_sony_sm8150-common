@@ -75,8 +75,9 @@ blob_fixups: blob_fixups_user_type = {
             .add_needed('libandroid.so')
             .add_needed('lib-imsvtshim.so'),
         (
-            'vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so',
             'vendor/lib/vendor.semc.hardware.extlight-V1-ndk_platform.so',
+            'vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so',
+            'vendor/bin/hw/vendor.semc.hardware.extlight-service.somc',
         ): blob_fixup()
             .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
         'vendor/lib/libsomc_alfortlpserv.so': blob_fixup()
