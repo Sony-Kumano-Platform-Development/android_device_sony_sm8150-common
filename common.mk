@@ -393,6 +393,10 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch-service.sony
+
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
