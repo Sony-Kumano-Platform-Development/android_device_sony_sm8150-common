@@ -59,6 +59,10 @@ BOARD_DTB_OFFSET           := 0x01f00000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
+TARGET_KERNEL_CONFIG := \
+    vendor/sm8150-perf_defconfig \
+    vendor/sony-kumano.config
+TARGET_KERNEL_SOURCE := kernel/sony/sm8150
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
