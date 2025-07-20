@@ -254,6 +254,11 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.egistec.hardware.fingerprint@4.0.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
