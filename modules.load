@@ -7,15 +7,12 @@ flash_led.ko
 hdmi_dlkm.ko
 machine_dlkm.ko
 mbhc_dlkm.ko
-mpq-adapter.ko
-mpq-dmx-hw-plugin.ko
 native_dlkm.ko
 pinctrl_wcd_dlkm.ko
 platform_dlkm.ko
 q6_dlkm.ko
 q6_notifier_dlkm.ko
 q6_pdr_dlkm.ko
-rdbg.ko
 sony_camera.ko
 stub_dlkm.ko
 swr_ctrl_dlkm.ko
