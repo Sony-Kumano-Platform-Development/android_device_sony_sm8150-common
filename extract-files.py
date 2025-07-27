@@ -99,6 +99,9 @@ blob_fixups: blob_fixups_user_type = {
                 'vendor/lib/libsomc_chokoballcmn.so',
         ): blob_fixup()
             .replace_needed('libui.so', 'libui-v34.so'),
+        'vendor/etc/wfdconfig.xml': blob_fixup()
+            .regex_replace('<AudioStreamInSuspend>0</AudioStreamInSuspend>', '<AudioStreamInSuspend>1</AudioStreamInSuspend>')
+            .regex_replace('<HID>0</HID>', '<HID>1</HID>'),
 }  # fmt: skip
 
 lib_fixups: lib_fixups_user_type = {
