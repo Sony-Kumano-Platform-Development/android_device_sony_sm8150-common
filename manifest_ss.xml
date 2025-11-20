@@ -30,6 +30,11 @@
         <fqname>IRadioVoice/slot1</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/SIM1</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.data.connection</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IDataConnection/slot1</fqname>
