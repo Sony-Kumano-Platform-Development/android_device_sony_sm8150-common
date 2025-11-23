@@ -6,6 +6,7 @@ init_daemon_domain(illumination_service)
 set_prop(illumination_service, vendor_display_always_on_prop)
 
 allow illumination_service self:capability { setgid setuid setpcap };
+allow illumination_service self:capability2 { block_suspend };
 allow illumination_service illumination_service_socket:sock_file write;
 allow illumination_service illumination_service_data_file:dir rw_dir_perms;
 allow illumination_service illumination_service_data_file:file create_file_perms;
