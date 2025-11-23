@@ -392,6 +392,10 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.qti
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch-service.sony
