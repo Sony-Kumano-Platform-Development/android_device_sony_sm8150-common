@@ -51,7 +51,6 @@ ro.vendor.use_data_netmgrd=true
 persist.vendor.data.mode=concurrent
 
 # SOMC
-ro.boot.hardware.sku=J9210
 ro.semc.content.number=PB2
 ro.semc.ms_type_id=PM-1241-BV
 ro.semc.product.device=J9210
