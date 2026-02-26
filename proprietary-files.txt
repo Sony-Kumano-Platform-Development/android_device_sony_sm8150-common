@@ -1487,23 +1487,23 @@ vendor/etc/init/init.qti.qcv.rc
 system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
 system/lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so;MODULE_SUFFIX=_vendor
 system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
-vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
+vendor/bin/hw/vendor.semc.hardware.secd@1.1-service|9142d9e31e4074a19e4e180c36d27bea42f16e9a
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/etc/init/init.taqmi.rc
-vendor/etc/init/vendor.semc.hardware.secd@1.0-service.rc
+vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc|62d4b29c5d888e82930c43783ac0a0b10e538318
 vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
-vendor/lib/libdevice_security_vendor.so
+vendor/lib/libdevice_security_vendor.so|f3e3e9d58a18bb5340fb2ce618f7349e610677ae
 vendor/lib/libmiscta.so
-vendor/lib/libsuntory.so
+vendor/lib/libsuntory.so|82c1c9db0a113de348d1df0068cfc0fedccfea5d
 vendor/lib/vendor.qti.hardware.soter@1.0.so
-vendor/lib/vendor.somc.hardware.security.secd@1.0.so
-vendor/lib64/libdevice_security_vendor.so
+vendor/lib/vendor.somc.hardware.security.secd@1.1.so|3b462dc17bf78be33388ad41712b169b9fb05c1e
+vendor/lib64/libdevice_security_vendor.so|9e74370ef870c733aa93a935d6c5157afdc5bd28
 vendor/lib64/libmiscta.so
-vendor/lib64/libsuntory.so
+vendor/lib64/libsuntory.so|6f4608638245f1f71f4338d8e7a2e944d15b7474
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/vendor.somc.hardware.miscta@1.0.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.somc.hardware.security.secd@1.0.so
+vendor/lib64/vendor.somc.hardware.security.secd@1.1.so|a3e3e37b00e478c022f82eb41dfd5f2113a47ce5
 
 # SECD firmware
 vendor/etc/firmware/tzsuntory.b00
@@ -1878,10 +1878,10 @@ vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0.so
-vendor/lib/libpfter.so
+vendor/lib/libpfter.so|6c67d709a52f52f57906f7f5dcd52918fac85365
 vendor/lib/libvppclient.so
 vendor/lib/libvpplibrary.so
-vendor/lib64/libpfter.so
+vendor/lib64/libpfter.so|f55d29af816990dc98b471d19632726e0fb93fa0
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpplibrary.so
 
